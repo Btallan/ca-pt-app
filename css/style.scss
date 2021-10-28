@@ -1,0 +1,224 @@
+$primary-color: #6ab547;
+$secondary-color: #f3f9e3;
+$third-color: #edd83d;
+
+
+
+
+
+@mixin header-footer{
+    background-color: $third-color;
+    display: flex;
+    flex-direction: column;
+}
+
+// @mixin screen and (min-width: 600px){
+//     @mixin header-footer-desktop{
+//         display: flex;
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// div {
+//     border: solid black 1px;
+//     margin: 5px;
+//     padding: 5px;
+// }
+
+// Header
+header {
+    @include header-footer();
+    // align-items: center;
+    
+    h1{
+        color: $secondary-color;
+        margin: 2px;
+    }
+}
+
+.logo{
+    background-color: $secondary-color;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+// Body
+body {
+    margin: 0;
+    background-color: $primary-color;
+}
+.training-option{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    background-color: $secondary-color;
+    padding: 6px;
+    margin: 10px;
+    img{
+        width: 85%;
+    }
+    h2{
+        color: $primary-color;
+    }
+ }
+
+
+
+
+
+
+// FOOTER
+footer{
+    @include header-footer();
+    justify-content: space-between;
+
+}
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    img {
+        width: 30%;
+    }
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+        margin: 2px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Desktop Screens
+@media screen and (min-width: 600px){
+
+
+// Header
+header {
+    @include header-footer();
+    align-items: center;
+    
+    h1{
+        color: $secondary-color;
+        margin: 2px;
+        font-size: 40px;        
+    }
+}
+
+
+
+.logo{
+    background-color: $secondary-color;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+// Body
+body {
+    margin: 0;
+    background-color: $primary-color;
+}
+.training-option{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    background-color: $secondary-color;
+    padding: 6px;
+    margin: 10px;
+    img{
+        width: 85%;
+    }
+    h2{
+        color: $primary-color;
+    }
+ }
+
+
+// FOOTER
+footer{
+    @include header-footer();
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-between;
+    img {
+        width: 30%;
+    }
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+        margin: 2px;
+    }
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.training-option{
+    img{
+        width: 350px;
+        height: 350px;
+    }
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+}

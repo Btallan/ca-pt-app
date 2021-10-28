@@ -1,0 +1,150 @@
+header {
+  background-color: #edd83d;
+  display: flex;
+  flex-direction: column;
+}
+header h1 {
+  color: #f3f9e3;
+  margin: 2px;
+}
+
+.logo {
+  background-color: #f3f9e3;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+  background-color: #6ab547;
+}
+
+.training-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3f9e3;
+  padding: 6px;
+  margin: 10px;
+}
+.training-option img {
+  width: 85%;
+}
+.training-option h2 {
+  color: #6ab547;
+}
+
+footer {
+  background-color: #edd83d;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+}
+.social-media img {
+  width: 30%;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-info p {
+  margin: 2px;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    background-color: #edd83d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header h1 {
+    color: #f3f9e3;
+    margin: 2px;
+    font-size: 40px;
+  }
+
+  .logo {
+    background-color: #f3f9e3;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  body {
+    margin: 0;
+    background-color: #6ab547;
+  }
+
+  .training-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f9e3;
+    padding: 6px;
+    margin: 10px;
+  }
+  .training-option img {
+    width: 85%;
+  }
+  .training-option h2 {
+    color: #6ab547;
+  }
+
+  footer {
+    background-color: #edd83d;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: space-between;
+  }
+  .social-media img {
+    width: 30%;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-info p {
+    margin: 2px;
+  }
+
+  .main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .training-option img {
+    width: 350px;
+    height: 350px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
